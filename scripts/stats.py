@@ -74,14 +74,14 @@ def collect(token):
         contributionCalendar { totalContributions }
       } }
     }"""
-    all_time_commits = 0
+    all_time_contributions = 0
     for year in years:
         c = graphql(
             token,
             year_query,
             {"from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"},
         )["viewer"]["contributionsCollection"]
-        all_time_commits += c["totalCommitContributions"]
+        all_time_contributions += c["contributionCalendar"]["totalContributions"]
 
     last_year = graphql(
         token,
@@ -126,9 +126,8 @@ def collect(token):
 
     return {
         "contributions_year": last_year["contributionCalendar"]["totalContributions"],
-        "commits_year": last_year["totalCommitContributions"],
         "prs_year": last_year["totalPullRequestContributions"],
-        "commits_all": all_time_commits,
+        "contributions_all": all_time_contributions,
         "repos_public": public,
         "repos_private": private,
         "languages": languages,
@@ -150,8 +149,7 @@ def card(width, height, title, body):
 def overview_svg(s):
     rows = [
         ("Contributions, last 12 months", f"{s['contributions_year']:,}"),
-        ("Commits, last 12 months", f"{s['commits_year']:,}"),
-        ("Commits, all time", f"{s['commits_all']:,}"),
+        ("Contributions, all time", f"{s['contributions_all']:,}"),
         ("Pull requests, last 12 months", f"{s['prs_year']:,}"),
         ("Repositories", f"{s['repos_public']} public · {s['repos_private']} private"),
     ]
@@ -160,8 +158,8 @@ def overview_svg(s):
         y = 74 + i * 26
         body += f'<text class="label" x="24" y="{y}">{escape(label)}</text>'
         body += f'<text class="value" x="396" y="{y}" text-anchor="end">{escape(value)}</text>'
-    body += '<text class="note" x="24" y="218">Includes private repositories</text>'
-    return card(420, 234, "GitHub activity", body)
+    body += '<text class="note" x="24" y="190">Includes private repositories</text>'
+    return card(420, 206, "GitHub activity", body)
 
 
 def languages_svg(s):
@@ -197,9 +195,8 @@ def placeholder_svg(title):
 
 SAMPLE = {
     "contributions_year": 1234,
-    "commits_year": 987,
     "prs_year": 42,
-    "commits_all": 2345,
+    "contributions_all": 2345,
     "repos_public": 6,
     "repos_private": 15,
     "languages": {"TypeScript": 50, "GDScript": 30, "JavaScript": 12, "Python": 8, "HTML": 4, "C#": 2},
