@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="100" viewBox="0 0 420 100" role="img" aria-label="Languages">
+<style>
+  .bg { fill: #ffffff; stroke: #d0d7de; }
+  .title { fill: #c2185b; font: 600 18px 'Segoe UI', Ubuntu, sans-serif; }
+  .label { fill: #57606a; font: 400 13px 'Segoe UI', Ubuntu, sans-serif; }
+  .value { fill: #1f2328; font: 600 13px 'Segoe UI', Ubuntu, sans-serif; }
+  .note { fill: #8c959f; font: 400 11px 'Segoe UI', Ubuntu, sans-serif; }
+  .track { fill: #eaeef2; }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #0d1117; stroke: #30363d; }
+    .title { fill: #fe428e; }
+    .label { fill: #8b949e; }
+    .value { fill: #e6edf3; }
+    .note { fill: #6e7681; }
+    .track { fill: #21262d; }
+  }
+</style>
+<rect class="bg" x="0.5" y="0.5" width="419" height="99" rx="6"/><text class="title" x="24" y="38">Languages</text><text class="label" x="24" y="74">Stats appear after the first scheduled update.</text></svg>

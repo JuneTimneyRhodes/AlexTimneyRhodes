@@ -37,8 +37,8 @@ More on my [repositories page](https://github.com/junetimneyrhodes?tab=repositor
 
 ### 📈 Stats
 
-![June's GitHub stats](https://github-readme-stats.vercel.app/api?username=junetimneyrhodes&show_icons=true&theme=radical)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=junetimneyrhodes&layout=compact&theme=radical)
+![GitHub activity, including private repositories](stats/overview.svg)
+![Languages across public and private repositories](stats/languages.svg)
 
 ---
 
