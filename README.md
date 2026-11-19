@@ -13,12 +13,12 @@
 
 | Project | What | Stack |
 | --- | --- | --- |
-| [Space Rogue](https://github.com/junetimneyrhodes/space-rogue-repo) | PS1-style space combat roguelite: arcade dogfighting, loadout runs across four regions of Sol, intentionally low-fi visuals. Playable end to end | Godot 4 / GDScript |
+| **Space Rogue** | PS1-style space combat roguelite: arcade dogfighting, loadout runs across four regions of Sol, intentionally low-fi visuals. Playable end to end | Godot 4 / GDScript |
 | [nodeaudio](https://github.com/junetimneyrhodes/nodeaudio) | Node-based audio workstation in the browser: patch, sequence, export game-ready WAV cues | JavaScript |
-| [Frontkeeper](https://frontkeeper.app) | A little app for plural systems to keep track of who's fronting · [help](https://frontkeeper.app/help) · [repo](https://github.com/junetimneyrhodes/patron-grace) | TypeScript |
-| [mainframe](https://github.com/junetimneyrhodes/mainframe) | Billing and accounting software for a picture framing business | TypeScript |
+| [Frontkeeper](https://frontkeeper.app) | A little app for plural systems to keep track of who's fronting · [help](https://frontkeeper.app/help) | TypeScript |
+| **mainframe** | Billing and accounting software for a picture framing business | TypeScript |
 
-More on my [repositories page](https://github.com/junetimneyrhodes?tab=repositories), including Godot experiments ([coldisopod](https://github.com/junetimneyrhodes/coldisopod), [idle-fantasy](https://github.com/junetimneyrhodes/idle-fantasy)) and TypeScript projects ([SPLICE](https://github.com/junetimneyrhodes/SPLICE), [vessel](https://github.com/junetimneyrhodes/vessel)).
+More on my [repositories page](https://github.com/junetimneyrhodes?tab=repositories).
 
 ### 🌟 Earlier projects
 
@@ -37,8 +37,8 @@ More on my [repositories page](https://github.com/junetimneyrhodes?tab=repositor
 
 ### 📈 Stats
 
-![June's GitHub stats](https://github-readme-stats.vercel.app/api?username=junetimneyrhodes&show_icons=true&theme=radical)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=junetimneyrhodes&layout=compact&theme=radical)
+![GitHub activity, including private repositories](stats/overview.svg)
+![Languages across public and private repositories](stats/languages.svg)
 
 ---
 
