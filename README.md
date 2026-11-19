@@ -15,7 +15,7 @@
 | --- | --- | --- |
 | **Space Rogue** | PS1-style space combat roguelite: arcade dogfighting, loadout runs across four regions of Sol, intentionally low-fi visuals. Playable end to end | Godot 4 / GDScript |
 | [nodeaudio](https://github.com/junetimneyrhodes/nodeaudio) | Node-based audio workstation in the browser: patch, sequence, export game-ready WAV cues | JavaScript |
-| [Frontkeeper](https://frontkeeper.app) | A little app for plural systems to keep track of who's fronting · [help](https://frontkeeper.app/help) | TypeScript |
+| [Frontkeeper](https://frontkeeper.app) | A little app for plural systems to keep track of who's fronting · [about](https://frontkeeper.app/help) | TypeScript |
 | **mainframe** | Billing and accounting software for a picture framing business | TypeScript |
 
 More on my [repositories page](https://github.com/junetimneyrhodes?tab=repositories).
